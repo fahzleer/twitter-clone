@@ -1,0 +1,16 @@
+# Ignore artifacts:
+dist
+build
+out
+openapi
+
+# Dependency directories
+node_modules/
+
+# file
+*.yml
+*.lock
+*.env
+
+# notes
+fieldnotes

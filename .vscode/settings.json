@@ -1,0 +1,37 @@
+{
+	"editor.tabSize": 4,
+	"editor.detectIndentation": false,
+	"git.ignoreLimitWarning": true,
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"files.eol": "\n",
+	"[json]": {
+		"editor.tabSize": 4
+	},
+	"[yaml]": {
+		"editor.tabSize": 4
+	},
+	"[prisma]": {
+		"editor.tabSize": 4,
+		"editor.defaultFormatter": "Prisma.prisma"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"eslint.packageManager": "pnpm",
+	"eslint.workingDirectories": [
+		{
+			"mode": "auto"
+		}
+	],
+	"[dockerfile]": {
+		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
+	},
+	"dotenv.enableAutocloaking": false,
+
+    // Debugging Tools
+	"debug.node.useV3": true,
+	"debug.chrome.useV3": true,
+	"debug.javascript.usePreview": true,
+	"debug.javascript.usePreviewAutoAttach": true
+}
