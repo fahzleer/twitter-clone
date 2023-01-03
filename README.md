@@ -1,3 +1,4 @@
+# Twitter Clone
 ## Usage
 
 First, clone the repository to your local directory.
@@ -98,10 +99,11 @@ Launch your browser and go to `http://localhost:5500`
 
 ## Technologies
 
--   [Next.js](https://nextjs.org) -> A flexible React framework that gives you building blocks to create fast web applications.
--   [NextAuth.js](https://next-auth.js.org) -> A complete open-source authentication solution for Next.js applications.
--   [Prisma](https://prisma.io) -> A open source next-generation ORM.
--   [tRPC](https://trpc.io) -> A very light library which lets you build fully typesafe APIs without the need of schemas or code generation.
--   [Zod](https://zod.dev) -> A TypeScript-first schema declaration and validation library.
--   [Ant Design](https://ant.design) -> A React UI library that contains easy-to-use components that are useful for building interactive user interfaces.
--   [Styled components](https://styled-components.com) -> A component-based styling tool. It is powered by tagged templates and allows to create react components with styles.
+-   [Next.js](https://nextjs.org) is a flexible React framework that gives you building blocks to create fast web applications.
+-   [TypeScript](https://www.typescriptlang.org) is a super set of JavaScript.
+-   [NextAuth.js](https://next-auth.js.org) is a complete open-source authentication solution for Next.js applications.
+-   [Prisma](https://prisma.io) is a open source next-generation ORM.
+-   [Zod](https://zod.dev) is a TypeScript-first schema declaration and validation library.
+-   [tRPC](https://trpc.io) is a very light library which lets you build fully typesafe APIs without the need of schemas or code generation.
+-   [Ant Design](https://ant.design) is a React UI library that contains easy-to-use components that are useful for building interactive user interfaces.
+-   [Styled components](https://styled-components.com) is a component-based styling tool. It is powered by tagged templates and allows to create react components with styles.
