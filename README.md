@@ -1,28 +1,107 @@
-# Create T3 App
+## Usage
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+First, clone the repository to your local directory.
+```bash
+git clone https://github.com/fahzleer/twitter-clone.git
+cd twitter-clone
+```
 
-## What's next? How do I make an app with this?
+Install all dependencies and Run.
+```bash
+pnpm i
+pnpm dev
+```
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+Launch your browser and go to `http://localhost:3000`
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+Use db push to push the initial schema to the database.
+```bash
+pnpm prisma db push
+```
 
--   [Next.js](https://nextjs.org)
--   [NextAuth.js](https://next-auth.js.org)
--   [Prisma](https://prisma.io)
--   [Tailwind CSS](https://tailwindcss.com)
--   [tRPC](https://trpc.io)
+To seed the database, run the db seed CLI command.
+```bash
+pnpm prisma db seed
+```
 
-## Learn More
+Run Prisma Studio.
+```bash
+pnpm prisma studio
+```
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+Launch your browser and go to `http://localhost:5500`
 
--   [Documentation](https://create.t3.gg/)
--   [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## Project Structure
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
 
-## How do I deploy this?
+    .
+    ├─ public
+    │  └─ favicon.ico
+    ├─ prisma
+    │  ├─ db.sqlite
+    │  ├─ schema.prisma
+    │  └─ seed.ts
+    ├─ src
+    │  ├─ assets
+    │  │  └─ icons
+    │  │     ├─ HeartIcon.tsx
+    │  │     └─ SVGTwitterIcon.tsx
+    │  ├─ components
+    │  │  ├─ sidebar
+    │  │  │  ├─ SidebarRow.tsx
+    │  │  │  └─ Sidebar.tsx
+    │  │  ├─ timeline
+    │  │  │  ├─ CreateTweet.tsx
+    │  │  │  ├─ Timeline.tsx
+    │  │  │  └─ Tweet.tsx
+    │  │  ├─ widgets
+    │  │  │  └─ Widgets.tsx
+    │  │  ├─ addImage.tsx
+    │  │  └─ updateCache.tsx
+    │  ├─ env
+    │  │  ├─ client.mjs
+    │  │  ├─ schema.mjs
+    │  │  └─ server.mjs
+    │  ├─ hooks
+    │  │  └─ useScrollPosition.tsx
+    │  ├─ pages
+    │  │  ├─ api
+    │  │  │  ├─ auth
+    │  │  │  │  └─ [...nextauth].ts
+    │  │  │  └─ trpc
+    │  │  │     └─ [trpc].ts
+    │  │  ├─ _app.tsx
+    │  │  ├─ index.tsx
+    │  │  └─ [name].tsx
+    │  ├─ server
+    │  │  ├─ common
+    │  │  │  └─ get-server-auth-session.ts
+    │  │  ├─ db.ts
+    │  │  │  └─ client.ts
+    │  │  └─ trpc
+    │  │     ├─ router
+    │  │     │  ├─ _app.ts
+    │  │     │  ├─ auth.ts
+    │  │     │  └─ tweet.ts
+    │  │     ├─ context.ts
+    │  │     └─ trpc.ts
+    │  ├─ styles
+    │  │  └─ globals.css
+    │  ├─ types
+    │  │  └─ next-auth.d.ts
+    │  └─ utils
+    │     └─ trpc.ts
+    ├─ .env
+    ├─ next.config.mjs
+    ├─ package.json
+    .
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+## Technologies
+
+-   [Next.js](https://nextjs.org) -> A flexible React framework that gives you building blocks to create fast web applications.
+-   [NextAuth.js](https://next-auth.js.org) -> A complete open-source authentication solution for Next.js applications.
+-   [Prisma](https://prisma.io) -> A open source next-generation ORM.
+-   [tRPC](https://trpc.io) -> A very light library which lets you build fully typesafe APIs without the need of schemas or code generation.
+-   [Zod](https://zod.dev) -> A TypeScript-first schema declaration and validation library.
+-   [Ant Design](https://ant.design) -> A React UI library that contains easy-to-use components that are useful for building interactive user interfaces.
+-   [Styled components](https://styled-components.com) -> A component-based styling tool. It is powered by tagged templates and allows to create react components with styles.
