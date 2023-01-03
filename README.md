@@ -7,6 +7,7 @@ git clone https://github.com/fahzleer/twitter-clone.git
 cd twitter-clone
 ```
 
+
 Install all dependencies and Run.
 ```bash
 pnpm i
@@ -14,6 +15,7 @@ pnpm dev
 ```
 
 Launch your browser and go to `http://localhost:3000`
+
 
 Use db push to push the initial schema to the database.
 ```bash
@@ -32,9 +34,10 @@ pnpm prisma studio
 
 Launch your browser and go to `http://localhost:5500`
 
+
 ## Project Structure
 
-
+    
     .
     ├─ public
     │  └─ favicon.ico
